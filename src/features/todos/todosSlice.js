@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import { v4 as uuidv4 } from "uuid";
 
 export const todosSlice = createSlice({
@@ -13,6 +13,9 @@ export const todosSlice = createSlice({
     },
   },
 });
+
+// sample API - https://jsonplaceholder.typicode.com/
+// jsonplaceholder.typicode.com/posts
 
 export const { addTodo, removeTodo } = todosSlice.actions;
 
