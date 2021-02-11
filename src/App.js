@@ -12,6 +12,7 @@ import Navbar from "rsuite/lib/Navbar";
 import Nav from "rsuite/lib/Nav";
 import Counter from "./features/counter/Counter";
 import Todos from "./features/todos/Todos";
+import Posts from "./features/posts/Posts";
 
 function App() {
   return (
@@ -21,10 +22,13 @@ function App() {
           <Navbar.Body>
             <Nav>
               <NavLink to="/">
-                <Nav.Item>Default Counter</Nav.Item>
+                <Nav.Item to="/">Default Counter</Nav.Item>
               </NavLink>
               <NavLink to="/todos">
-                <Nav.Item>Todos</Nav.Item>
+                <Nav.Item>Basic Todos</Nav.Item>
+              </NavLink>
+              <NavLink to="/posts">
+                <Nav.Item>Async Posts</Nav.Item>
               </NavLink>
             </Nav>
           </Navbar.Body>
@@ -33,6 +37,9 @@ function App() {
         <Switch>
           <Route path="/todos">
             <Todos />
+          </Route>
+          <Route path="/posts">
+            <Posts />
           </Route>
           <Route path="/">
             <Counter />
