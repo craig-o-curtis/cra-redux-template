@@ -32,6 +32,8 @@ const postsSlice = createSlice({
     status: null,
   },
   extraReducers: {
+    // - can import other slices and do actions in extrareducers
+    // [fetchUsers.pending]:
     [getPosts.pending]: (state, action) => {
       // state.status = "loading";
       Alert.info("Loading Data");
@@ -63,7 +65,6 @@ const postsSlice = createSlice({
 // Selectors don't work with async thunks....
 export const selectPostsStatus = (store) => store.posts.status;
 export const selectPosts = (store) => store.posts.list;
-
 // TODO add ahooks, reload when focus
 
 export default postsSlice.reducer;
