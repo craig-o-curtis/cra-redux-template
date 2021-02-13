@@ -28,6 +28,9 @@ export const fetchUsers = createAsyncThunk(
           }))
         )
         .flat();
+      console.log("WIP - need to add articles, comments to store");
+      console.log("articles");
+      console.log(articles);
 
       // ** refactored with reduce
       const articlesReduced = data.reduce((acc, curr) => {
@@ -39,6 +42,9 @@ export const fetchUsers = createAsyncThunk(
         return acc;
       }, []);
 
+      console.log("articlesReduced");
+      console.log(articlesReduced);
+
       const comments = data
         .map((user) =>
           user.comments.map((comment) => ({
@@ -47,6 +53,8 @@ export const fetchUsers = createAsyncThunk(
           }))
         )
         .flat();
+      console.log("comments");
+      console.log(comments);
 
       dispatch(setUsers(users));
       // dispatch(setArticles(articles));

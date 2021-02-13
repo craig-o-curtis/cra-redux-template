@@ -33,7 +33,11 @@ const Users = () => {
         <p>Work in Progress</p>
         <p>
           Awaiting follow-up video from{" "}
-          <a href="https://www.youtube.com/watch?v=dDWj1uL8raU" target="_blank">
+          <a
+            href="https://www.youtube.com/watch?v=dDWj1uL8raU"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Rowadz Redux Toolkit Tutorial #8
           </a>
         </p>
