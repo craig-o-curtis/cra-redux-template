@@ -10,7 +10,16 @@ Basic Redux slice
 
 ### Posts
 
-Redux slice with `createAsyncThunk`
+Redux slice with createAsyncThunk
+
+### Entities
+
+Redux slice with nested data
+
+- cd into the folder mock-pollux-api
+- `npm install` or `npm i`
+- `npm run dev`
+- now look at the terminal; API at `http://localhost:3001/users`
 
 ## Available Scripts
 
@@ -38,3 +47,5 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+mohammedal-rowad.github.io/pollux/#/generate

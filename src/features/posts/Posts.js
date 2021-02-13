@@ -13,8 +13,6 @@ const Posts = () => {
   const posts = useSelector(selectPosts);
   const postsStatus = useSelector(selectPostsStatus);
 
-  console.log(posts);
-
   useEffect(() => {
     dispatch(getPosts({ limit: 5 }));
   }, [dispatch]);
