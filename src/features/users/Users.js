@@ -46,6 +46,7 @@ const Users = () => {
           <a
             href="https://redux-toolkit.js.org/api/createEntityAdapter"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Redux Toolkit Docs
           </a>
