@@ -45,7 +45,11 @@ const TextDebounce = () => {
         <Divider />
         <p>
           Uses{" "}
-          <a href="https://github.com/Marak/Faker.js#readme" target="_blank">
+          <a
+            href="https://github.com/Marak/Faker.js#readme"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             faker.js
           </a>{" "}
           for mock data
@@ -55,6 +59,7 @@ const TextDebounce = () => {
           <a
             href="https://ahooks.js.org/hooks/side-effect/use-debounce-fn"
             target="_blank"
+            rel="noopener noreferrer"
           >
             useDebounceFn from ahooks
           </a>{" "}
