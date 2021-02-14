@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Container from "rsuite/lib/Container";
 import Header from "rsuite/lib/Header";
 import Content from "rsuite/lib/Content";
+import Panel from "rsuite/lib/Panel";
 import Loader from "rsuite/lib/Loader";
 import Input from "rsuite/lib/Input";
 import Divider from "rsuite/lib/Divider";
@@ -43,28 +44,30 @@ const TextDebounce = () => {
       </Header>
       <Content style={{ padding: "2rem" }}>
         <Divider />
-        <p>
-          Uses{" "}
-          <a
-            href="https://github.com/Marak/Faker.js#readme"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            faker.js
-          </a>{" "}
-          for mock data
-        </p>
-        <p>
-          Uses{" "}
-          <a
-            href="https://ahooks.js.org/hooks/side-effect/use-debounce-fn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            useDebounceFn from ahooks
-          </a>{" "}
-          for debounced actions
-        </p>
+        <Panel header="Debounce to delay rerenders">
+          <p>
+            Uses{" "}
+            <a
+              href="https://github.com/Marak/Faker.js#readme"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              faker.js
+            </a>{" "}
+            for mock data
+          </p>
+          <p>
+            Uses{" "}
+            <a
+              href="https://ahooks.js.org/hooks/side-effect/use-debounce-fn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              useDebounceFn from ahooks
+            </a>{" "}
+            for debounced actions
+          </p>
+        </Panel>
 
         {loadingDispatch && (
           <Loader

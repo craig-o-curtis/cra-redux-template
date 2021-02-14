@@ -4,7 +4,7 @@ import { name } from "faker";
 const randomAnnoyingData = () =>
   Array.from({ length: 2000 }).map(() => ({
     name: name.findName(),
-    job: name.jobTitle,
+    // job: name.jobTitle,
   }));
 
 const textDebounceSlice = createSlice({
